@@ -226,6 +226,12 @@ var PhotoSwipeGen = function(parentslide, options) {
             };
         }).on('click', function(event) {
             event.preventDefault();
+            clickItem = $(this).get(0);
+            $(this).parents(parentslide).find('.ps-item').each(function(index, el) {
+                if ($(this).get(0) === clickItem) {
+                    options.index = index;
+                }
+            });
             var pswpElement = document.querySelectorAll('.pswp')[0];
             var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, PhotoSwipeItems, options);
             gallery.init();

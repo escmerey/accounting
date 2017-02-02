@@ -3616,3 +3616,33 @@ form {
         }
     }
 }
+
+.popup-1{
+    box-shadow: 0 0 20px #3b3b3b;
+    max-width: 320px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    h3{
+        font-family: Constantia;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+    form{
+        max-width: 280px;
+        display: block;
+        margin: 0 auto;
+    }
+    input{
+        padding: 0 5px !important;
+        margin-bottom: 10px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 0 20px;
+        display: block;
+        margin: 20px auto 0;
+    }
+}

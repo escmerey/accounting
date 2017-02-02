@@ -163,7 +163,7 @@
                         <li>Отсутствие аналитических данных/управленческого учета</li>
                         <li>Система мотивации, несоответствующая реалиям бизнеса и многие другие факторы</li>
                     </ul>
-                    <a href="#" class="btn_arr">Консультация</a>
+                    <a href="#" class="btn_arr callPopup" data-popupBlock="popup-1">Консультация</a>
                 </div>
                 <div class="evidence__right"><img src="images/evidence-img.png" alt=""></div>
             </div>
@@ -219,7 +219,7 @@
                     <div class="purport__item big-item">Оценка причин возникновения рисков для компании</div>
                     <div class="purport__item big-item">Оценка показателей рентабельности компании > сравнение со средними показателями по отрасли</div>
                     <div class="purport__item big-item">Анализ структуры компании и наличия рисков, связанных с «отмыванием» денежных средств</div>
-                    <a href="#" class="btn_arr">свяжитесь со мной</a>
+                    <a href="#" class="btn_arr callPopup" data-popupBlock="popup-1">свяжитесь со мной</a>
                 </div>
                 <div class="purport__right">
                     <img src="images/purport-img.jpg" alt="">
@@ -259,7 +259,7 @@
                     </div>
                 </div>
                 <div class="result__bottom">
-                    <a href="#" class="btn_arr">запросить предложение</a>
+                    <a href="#" class="btn_arr callPopup" data-popupBlock="popup-1" data-title="запросить предложение">запросить предложение</a>
                     <span>Конкретные рекомендации, которые консультант может предоставить по результатам проведения расследования, зависят также и от полученных результатов и могут отличаться от предложенных выше</span>
                 </div>
             </div>
@@ -379,11 +379,18 @@
                 </div>
             </div>
         </footer>
-        <!-- <a href="#" class="login_in callPopup" data-popupBlock="popup-1">Войти</a>   -->
+        
         
         <div id="overlay"></div>
         <div class="popup popup-1">
-            <div class="popup_close"></div>
+            <div class="popup_close">&times;</div>
+            <h3>Обратный звонок</h3>
+            <form action="">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш телефон">
+                <input type="email" placeholder="Ваш email">
+                <button type="submit" class="btn">Отправить</button>
+            </form>
         </div>
         <div class="popup successfully">
             <div class="popup_close"></div>

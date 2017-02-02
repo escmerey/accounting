@@ -147,7 +147,9 @@ input, button, a, textarea {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #overlay.visible {
   visibility: visible;
@@ -184,19 +186,10 @@ input, button, a, textarea {
 }
 .popup .popup_close {
   position: absolute;
-  top: -10px;
-  right: -9px;
-  display: inline-block;
+  top: -40px;
+  right: -35px;
   cursor: pointer;
-}
-.popup .popup_close:hover img {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-.popup .popup_close img {
-  cursor: pointer;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  font-size: 40px;
 }
 
 .successfully {
@@ -4668,4 +4661,37 @@ form button {
 }
 .footer__dev a:hover {
   text-decoration: none;
+}
+
+.popup-1 {
+  -webkit-box-shadow: 0 0 20px #3b3b3b;
+  box-shadow: 0 0 20px #3b3b3b;
+  max-width: 320px;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.popup-1 h3 {
+  font-family: Constantia;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 10px;
+}
+.popup-1 form {
+  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+.popup-1 input {
+  padding: 0 5px !important;
+  margin-bottom: 10px;
+}
+.popup-1 .btn {
+  font-size: 14px;
+  padding: 0 20px;
+  display: block;
+  margin: 20px auto 0;
 }
