@@ -140,7 +140,7 @@ $(function() {
         }
     });
 
-    var PhotoSwipeSert = new PhotoSwipeGen('.aboutus__sertificate', {
+    var PhotoSwipeSert = new PhotoSwipeGen('.aboutus__sertificate, .sertificates', {
         history: false,
         focus: false,
         showHideOpacity: true,
@@ -156,6 +156,18 @@ $(function() {
                 y: rect.top + pageYScroll,
                 w: rect.width
             };
+        }
+    });
+
+    var sertificatesSwiper = new Swiper('.sertificates__slider', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        paginationBulletRender: function(swiper, index, className) {
+            return '<span class="' + className + '"><img src="' + $(swiper.imagesToLoad[index]).attr('src') + '" alt=""></span>';
         }
     });
 
@@ -211,7 +223,7 @@ var PhotoSwipeGen = function(parentslide, options) {
                 src: $(this).attr('href'),
                 w: img.width,
                 h: img.height,
-            }
+            };
         }).on('click', function(event) {
             event.preventDefault();
             var pswpElement = document.querySelectorAll('.pswp')[0];
