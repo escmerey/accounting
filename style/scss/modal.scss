@@ -48,6 +48,10 @@
         right: -35px;
         cursor: pointer;
         font-size: 40px;
+        @media screen and (max-width: 520px){
+            right: 0;
+            top: -50px;
+        }
     }
 }
 .successfully {
